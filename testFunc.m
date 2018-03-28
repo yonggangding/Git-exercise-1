@@ -1,8 +1,8 @@
 function [ Ixx, Iyy ] = testFunc( b, h )
 % Calculate the 2nd monent of a rectangle
 %  
-    Ixx=1/12*b*h^3;
-    Iyy=1/12*h*b^3;
+    Ixx=b*h^3/3;
+    Iyy=h*b^3/3;
 
 end
 
