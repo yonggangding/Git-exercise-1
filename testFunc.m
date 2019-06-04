@@ -5,5 +5,3 @@ function [ Ixx, Iyy ] = testFunc( b, h )
     Iyy=h*b^3/3;
 
 end
-
-sdfsd
