@@ -1,14 +1,20 @@
 clear
 clc
 
-b=3;
-h=4;
-m = 5;
+b0=3;
+h0=4;
+m0 = 5;
 
-[Ixx,Iyy]=testFunc(b,h);
+b=7;
+h=9;
+m=6;
 
-b1=7;
-h1=9;
-m1=6;
+% stiffness of original shape
+EIFlap0=3.89e10;
+EIEfge0=4.13e10;
 
-[Ixx1,Iyy1]=testFunc(b1,h1);
+%derived the stiffness of new shape
+[EIFlap, EIEdge] = calStiff(b, h, m, b0, h0, m0, EIFlap0, EIEdge0);
+
+
+
